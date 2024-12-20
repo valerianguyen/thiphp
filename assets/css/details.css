@@ -1,0 +1,133 @@
+.product-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.original-price {
+
+    color: #888;
+}
+
+.btn-add-to-cart {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #c0392b;
+}
+
+.description-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.description-list li {
+    margin-bottom: 10px;
+}
+
+.description-list strong {
+    font-weight: bold;
+}
+
+
+.product-main-image {
+    width: 100%;
+    height: 500px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures entire image is visible while maintaining aspect ratio */
+}
+
+.product-image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.gallery-image-wrapper {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop to fill the container */
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gallery-image:hover {
+    border-color: #198754;
+    transform: scale(1.05);
+}
+
+.gallery-image.active {
+    border-color: #198754;
+    box-shadow: 0 0 10px rgba(25, 135, 84, 0.5);
+}
+
+
+.reviews {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px 120px; /* Spacing inside the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 30px; /* Space above the reviews section */
+}
+
+.reviews h4 {
+    color: rgb(25, 135, 84); /* Primary color for headings */
+    font-weight: bold;
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.review-item {
+    border-bottom: 1px solid #dee2e6; /* Divider between reviews */
+    padding: 15px 0; /* Vertical padding for each review */
+}
+
+.review-item:last-child {
+    border-bottom: none; /* Remove divider from last item */
+}
+
+.review-item strong {
+    font-size: 1.1rem; /* Slightly larger font for usernames */
+    color: #333; /* Darker color for better readability */
+}
+
+.review-rating {
+    color: #ffcc00; /* Gold color for stars */
+}
+
+.review-text {
+    margin-top: 5px; /* Space above review text */
+    color: #555; /* Dark gray for review text */
+}
+
+.review-text:hover {
+    color: rgb(25, 135, 84); /* Change color on hover for emphasis */
+}
+
+.no-reviews {
+    text-align: center; /* Center the message */
+    font-style: italic; /* Italic style for no reviews message */
+    color: #888; /* Light gray for no reviews text */
+}
