@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['change_password'])) {
         // Câu lệnh SQL để cập nhật mật khẩu
         $sql_password = "UPDATE user SET password = :password WHERE id_user = :user_id";
         $stmt_password = $pdo->prepare($sql_password); // Chuẩn bị câu lệnh SQL
-        $stmt_password->execute(['password' => $_new_password, 'user_id' => $user_id]); // Thực thi câu lệnh với mật khẩu mới
+        $stmt_password->execute(['password' => $new_password, 'user_id' => $user_id]); // Thực thi câu lệnh với mật khẩu mới
 
         $success_msg = "Mật khẩu thay đổi thành công!"; // Thông báo thành công
         echo "<script>

@@ -18,7 +18,7 @@ $sql_stats = "
 
         SUM(CASE 
             WHEN status = 'Đang duyệt' or status = 'Đang giao'
-            THEN (SELECT SUM((od.price_at_purchase - p.Inprice) * od.quantity) 
+            THEN (SELECT SUM((od.price_at_purchase- p.Inprice) * od.quantity) 
                   FROM order_detail od 
                   JOIN product p ON od.product_id = p.id_product 
                   WHERE od.order_id = o.id_order) 

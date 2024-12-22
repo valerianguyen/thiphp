@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result) {
     
         echo "<script>
-        alert('Email, username hoặc số điện thoại đã được đăng ký.');
+        alert('Email, username hoặc số điện thoại của bạn đã được đăng ký. Vui lòng nhập lại.');
         window.location.href = '" . BASE_URL . "pages/auth.php'; 
         </script>";
         exit();
